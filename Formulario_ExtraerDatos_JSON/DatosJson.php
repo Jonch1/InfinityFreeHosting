@@ -14,14 +14,14 @@ $json = file_get_contents('dades');
 $datos = json_decode($json, true);
 
 // Extraer los datos
-$nombre = $datos['nombre'];
-$edad = $datos['edad'];
+$nom = $datos['nom'];
+$edat = $datos['edat'];
 $dni = $datos['dni'];
 ?>
 
 <ul>
-    <li><strong>Nombre:</strong> <?php echo $nombre; ?></li>
-    <li><strong>Edad:</strong> <?php echo $edad; ?></li>
+    <li><strong>Nombre:</strong> <?php echo $nom; ?></li>
+    <li><strong>Edad:</strong> <?php echo $edat; ?></li>
     <li><strong>Dni:</strong> <?php echo $dni; ?></li>
 </ul>
 </body>

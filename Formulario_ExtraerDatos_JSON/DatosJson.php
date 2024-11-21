@@ -20,9 +20,9 @@ $dni = $datos['dni'];
 ?>
 
 <ul>
-    <li><strong>Nombre:</strong> <?php echo $nom; ?></li>
-    <li><strong>Edad:</strong> <?php echo $edat; ?></li>
-    <li><strong>Dni:</strong> <?php echo $dni; ?></li>
+    <li><strong>Nombre:</strong> <?php echo $datos->nom; ?></li>
+    <li><strong>Edad:</strong> <?php echo $datos->edat; ?></li>
+    <li><strong>Dni:</strong> <?php echo $datos->dni; ?></li>
 </ul>
 </body>
 </html>

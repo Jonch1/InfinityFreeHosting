@@ -5,11 +5,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $edat = $_POST['edat'];
     $dni = $_POST['dni'];
 
-    if (empty($nombre) || empty($edad) || empty($dni)) {
+    if (empty($nom) || empty($edat) || empty($dni)) {
         echo "Has dejado campos sin rellenar...";
     }
 
-    if (is_numeric($nombre) || !is_numeric($edad)) {
+    if (is_numeric($nom) || !is_numeric($edat)) {
         echo "Los valores introducidos no son correctos";
     }
 }
@@ -28,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <h1>Resumen de los Datos Introducidos</h1>
 
 <ul>
-    <li><strong>Nombre:</strong> <?php echo $nombre; ?></li>
+    <li><strong>Nombre:</strong> <?php echo $nom; ?></li>
     <li><strong>DNI:</strong> <?php echo $dni; ?></li>
-    <li><strong>Edad:</strong> <?php echo $edad; ?></li>
+    <li><strong>Edad:</strong> <?php echo $edat; ?></li>
 </ul>
 
 </body>

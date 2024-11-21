@@ -9,14 +9,14 @@
 <h1>Estos son los datos que contiene el JSON</h1>
 
 <?php
-// Leer el archivo JSON
-$json = file_get_contents('dades');
+
+$json = $_POST('dades');
 $datos = json_decode($json, true);
 
-// Extraer los datos
-$nom = $datos['nom'];
-$edat = $datos['edat'];
-$dni = $datos['dni'];
+
+// $nom = $datos['nom'];
+// $edat = $datos['edat'];
+// $dni = $datos['dni'];
 ?>
 
 <ul>

@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $dades = json_decode(file_get_contents("php://input"));
+    $dades = json_decode(file_get_contents("exercici3formulariphp.html"));
     //$nom = $_POST['nom'];
     //$edat = $_POST['edat'];
     //$dni = $_POST['dni'];

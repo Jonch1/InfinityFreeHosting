@@ -10,7 +10,7 @@
 
 <?php
 // Leer el archivo JSON
-$json = file_get_contents('dades.json');
+$json = file_get_contents('Datos.json');
 $datos = json_decode($json, true);
 
 // Extraer los datos

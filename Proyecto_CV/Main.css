@@ -22,6 +22,9 @@ body {
     padding: 10px 20px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    margin-bottom: 100px;
 }
 
 .iconos {
@@ -29,6 +32,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 60px;
+}
+
+.dropdown {
+    margin-top: 8px;
 }
 
 .perfil {
@@ -40,11 +47,18 @@ body {
 }
 
 .imagen {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+.MiNombre {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 20px;
 }
 
 .botones{
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .boton1, .boton2, .boton3{
@@ -69,4 +83,6 @@ body {
     background-color: #fff;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     font-size: 14px;
+    position: fixed;
+    bottom: 0;
 }

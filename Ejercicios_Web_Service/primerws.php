@@ -6,7 +6,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 switch ($method) {
     case 'GET':
-        echo json_encode(["message" => "Hola mundo"]);
+        echo json_encode(["message" => "Operación realizada correctamente"]);
         break;
 
     case 'POST':

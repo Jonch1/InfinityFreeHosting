@@ -1,22 +1,29 @@
 <?php
 
-header('Content-type: application/json');
+    // header('Content-Type: application/json');
 
-$method = $_SERVER['REQUEST_METHOD'];
+    $method = $_SERVER['REQUEST_METHOD'];
+    $url = $_SERVER['REQUEST_URL'];
+    $parts = explode('/', $url);
+    $entrypoint = end($parts);
 
-switch ($method) {
-    case 'GET':
-        echo json_encode(["message" => "Hola mundo"]);
-        break;
+    if ($entrypoint === "test") {
 
-    case 'POST':
-        http_response_code(405);
-        echo json_encode(["message" => "Método no permitido"]);
-        break;
+        switch ($method) {
+            case 'GET':
+                echo json_encode(["message" => "Operación realizada correctamente"]);
+                break;
 
-    default:
-        echo json_encode(["message" => "Método no permitido"]);
-        break;
-}
+            case 'POST':
+                http_response_code(405);
+                echo json_encode(["message" => "Método no permitido"]);
+                break;
+
+        }
+
+    } else {
+        echo "No has seleccionado un entrypoint";
+        http_response_code(404);
+    }
+
 ?>
-

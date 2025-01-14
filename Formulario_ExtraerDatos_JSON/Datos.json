@@ -1,5 +1,9 @@
 {
-  "nombre": "Juan",
-  "edad": 30,
-  "dni": "12345678A"
+    "nacionalidad": "Española",
+    "hijos": 3,
+    "habilidades": [
+        "PHP",
+        "JavaScript",
+        "SQL"
+    ]
 }
